@@ -204,55 +204,7 @@
         </div>
       </div>
     </section>
-    <!-- <section class="about" id="about">
-      <div class="container container-left">
-        <h3 class="section-title about-title">I code things from scratch_</h3>
-        
-        <p class="about-descr mobile-element">
-          <span>[and help to</span>
-          <span>create great web</span>
-          <span>apps]</span>
-        </p>
-        
-        <div class="tablet-element desktop-element">
-          <p class="about-descr">
-            <span>[and help to</span>
-            <span>create great web</span>
-            <span>apps]</span>
-          </p>
-        </div>
-
-
-        <div class="about-img-container">
-          <p class="about-img-text">
-            WEB
-            <img 
-            src="img/web-apps-laptop.png" 
-            alt="web apps laptop" 
-            class="about-img" 
-            />
-          </p>
-        </div>
-        <p class="about-text mobile-element">
-          / I will help you to create a high-performance Landing Page, functional
-          corporate website for your business, interactive web app for SaaS,
-          startup, or other services.
-        </p>
-        <p class="about-text tablet-element desktop-element">
-          / I will help you to create a<br> high-performance Landing Page,<br>
-          functional corporate website for your<br> business, interactive web app
-          for<br> SaaS, startup, or other services.
-        </p>
-        <p class="about-text mobile-element">
-          / My specialization is front-end development — client side of the web. But
-          I also have full-stack developer experience.
-        </p>
-        <p class="about-text tablet-element desktop-element">
-          / My specialization is front-end development — client side of the web. But
-          I also have full-stack developer experience.
-        </p>
-      </div>
-    </section> -->
+   
     
     <section class="personal-projects" id="project">
       <div class="container">
@@ -387,9 +339,11 @@
           <p class="callback-form-description">
             Leave a request to discuss the task and technical requirements
           </p>
-          <input id="callback-form-input-name" type="text" class="callback-form-input" placeholder="Name">
-          <input id="callback-form-input-email" type="email" class="callback-form-input" placeholder="Email">
-          <input id="callback-form-input-phone" type="tel" class="callback-form-input"  placeholder="+380 (__) ___ - __ - __">
+          <div class="callback-form-input-container">
+            <input id="callback-form-input-name" type="text" class="callback-form-input" placeholder="Name">
+            <input id="callback-form-input-email" type="email" class="callback-form-input" placeholder="Email">
+            <input id="callback-form-input-phone" type="tel" class="callback-form-input"  placeholder="+380 (__) ___ - __ - __">
+          </div>
           <input id="callback-form-input-submit" type="submit" class="callback-form-submit accent-btn" value="Discuss the project  —">
         </form>
       </div>
@@ -397,30 +351,32 @@
 
     <section class="calculator" id="calculator">
     <div class="container">
-      <h3 class="calculator-title section-title mobile-element">
-        Calculate_ the cost of a future project
-      </h3>
-      <h3 class="calculator-title section-title tablet-element desktop-element">
-        Calculate_<br> the cost of a<br> future project
-      </h3>
-      <div class="mobile-element">
-        <p class="calculator-descr">
-          <span>This is an</span>
-          <span class="calculator-descr-accent">approximate</span>
+      <div class="calculator-info-container">
+        <h3 class="calculator-title section-title mobile-element">
+          Calculate_ the cost of a future project
+        </h3>
+        <h3 class="calculator-title section-title tablet-element desktop-element">
+          Calculate_<br> the cost of a<br> future project
+        </h3>
+        <div class="mobile-element">
+          <p class="calculator-descr">
+            <span>This is an</span>
+            <span class="calculator-descr-accent">approximate</span>
+            <span>calculation.</span>
+          </p>
+        </div>
+
+        <p class="calculator-descr tablet-element desktop-element">
+          <span>This is an approximate</span>
           <span>calculation.</span>
         </p>
+      
+        <img src="img/calculator.svg" alt="calculator" class="calculator-icon" />
+        <p class="calculator-text">
+          / The final cost depends on the technical requirements, terms, specifics
+          of your project.
+        </p>
       </div>
-      <p class="calculator-descr tablet-element desktop-element">
-        <span>This is an approximate</span>
-        <span>calculation.</span>
-      </p>
-    
-
-      <img src="img/calculator.svg" alt="calculator" class="calculator-icon" />
-      <p class="calculator-text">
-        / The final cost depends on the technical requirements, terms, specifics
-        of your project.
-      </p>
       <form action="" class="calculator-form">
         <div class="calculator-form-input">
           <label for="calculator-form-website-type" class="calculator-form-title">What should be done:</label>
@@ -479,46 +435,51 @@
 
     <footer class="footer-container" id="contacts">
       <div class="container">
-        <h3 class="footer-name mobile-element">Alex Tur</h3>
-        <p class="footer-profession mobile-element">Frontend Developer</p>
-        
-          <div class="tablet-element desktop-element">
-            <h3 class="footer-name">Alex Tur</h3>
-            <p class="footer-profession">Frontend Developer</p>
-            <div class="social-networks-container">
-              <div>
-                <a href="">
-                  <i class="fab fa-github-square"></i>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <i class="fab fa-facebook-square"></i>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
+
+        <div class="footer-name-container mobile-element desktop-element">
+          <h3 class="footer-name mobile-element desktop-element">Alex Tur</h3>
+          <p class="footer-profession mobile-element desktop-element">Frontend Developer</p>
+        </div>
+
+
+        <div class="tablet-element">
+          <h3 class="footer-name">Alex Tur</h3>
+          <p class="footer-profession">Frontend Developer</p>
+          <div class="social-networks-container">
+            <div>
+              <a href="">
+                <i class="fab fa-github-square"></i>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="fab fa-instagram"></i>
+              </a>
             </div>
           </div>
+        </div>
+        <div class="tablet-element">
+          <div class="footer-phone-number-wrap"><a href="tel:+380505050505" class="footer-phone-number">+38 (050) 505 05 05</a></div> 
+          <div class="footer-email-wrap"><a href="mailto:alexturdev@gmail.com" class="footer-e-mail">alexturdev@gmail.com</a></div>
+        </div>
 
-          <div class="tablet-element desktop-element">
-            <div class="footer-phone-number-wrap"><a href="tel:+380505050505" class="footer-phone-number">+38 (050) 505 05 05</a></div> 
-            <div class="footer-email-wrap"><a href="mailto:alexturdev@gmail.com" class="footer-e-mail">alexturdev@gmail.com</a></div>
-          </div>
 
+        <div class="footer-contacts-container mobile-element desktop-element">
+          <a href="tel:+380505050505" class="footer-phone-number mobile-element desktop-element">+38 (050) 505 05 05</a>
+          <a href="mailto:alexturdev@gmail.com" class="footer-e-mail mobile-element desktop-element">alexturdev@gmail.com</a>
+        </div>
 
-        <a href="tel:+380505050505" class="footer-phone-number mobile-element">+38 (050) 505 05 05</a>
-        <a href="mailto:alexturdev@gmail.com" class="footer-e-mail mobile-element">alexturdev@gmail.com</a>
-        
-        <div class="social-networks-container mobile-element">
+        <div class="social-networks-container mobile-element desktop-element">
           <div>
             <a href="">
               <i class="fab fa-github-square"></i>
