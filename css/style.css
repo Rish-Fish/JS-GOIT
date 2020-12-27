@@ -32,6 +32,7 @@
   /* animation */
   --animation-fast: 0.1s;
   --animation-slow: 0.3s;
+  --animation-transition: all 0.2s ease-in-out;
 }
 
 @font-face {
@@ -100,8 +101,13 @@ body {
   outline: none;
   cursor: pointer;
   text-decoration: none;
+  transition: var(--animation-transition);
 }
-
+.accent-btn:hover {
+  outline: 2px solid var(--c-accent);
+  color: var(--txt-c-accent);
+  background-color: transparent;
+}
 .container {
   min-width: 320px;
   width: 100%;
@@ -138,6 +144,7 @@ body {
   pointer-events: none;
   display: none;
   background: var(--modal-bg-dark);
+  z-index: 3;
 }
 
 .modal-active {
@@ -171,7 +178,10 @@ body {
   color: var(--txt-c-grey);
   text-decoration: none;
   text-align: center;
-  margin-bottom: 35px;
+  transition: var(--animation-transition);
+}
+.mobile-menu-item:hover {
+  color: var(--txt-c-accent);
 }
 
 .mobile-menu-containet {
@@ -344,6 +354,11 @@ body {
   text-decoration: none;
   margin-right: 20px;
 }
+.hire-me-btn:hover {
+  transform: scale(1.1);
+  transition: var(--animation-transition);
+  color: var(--c-grey-light);
+}
 
 .mobile-menu {
   display: flex;
@@ -393,7 +408,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   margin: 0 0 25px 0;
-  display: block;
+  display: none;
 }
 
 .project-modal-text {
@@ -409,6 +424,13 @@ body {
 }
 
 /* FRONT PAGE - BASE INFO */
+
+.logo-link {
+  transition: var(--animation-transition);
+}
+.logo-link:hover {
+  transform: scale(1.1);
+}
 
 .front-page-my-name {
   font-weight: bold;
@@ -481,6 +503,13 @@ body {
   padding: 10px 40px;
   font-weight: bold;
   margin: 20px 0 0 0;
+  cursor: pointer;
+}
+.front-page-my-video-btn:hover {
+  background-color: var(--c-accent);
+  outline: 2px solid var(--c-accent);
+  color: var(--txt-c-light);
+  transition: var(--animation-transition);
 }
 
 .front-page-my-video-btn .fa-play {
@@ -741,6 +770,7 @@ body {
   align-items: center;
   width: 100%;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .callback-form-title {
@@ -929,6 +959,10 @@ body {
   text-decoration: none;
   margin-top: 20px;
 }
+.footer-phone-number:hover {
+  color: var(--txt-c-accent);
+  transition: var(--animation-transition);
+}
 
 .footer-e-mail {
   font-size: 17px;
@@ -937,6 +971,10 @@ body {
   text-decoration: none;
   margin-top: 15px;
   /* text-align: center; */
+}
+.footer-e-mail:hover {
+  color: var(--txt-c-accent);
+  transition: var(--animation-transition);
 }
 
 .social-networks-container {
@@ -1271,7 +1309,7 @@ body {
     width: 507px;
     margin-left: 115px;
   }
-  .nav-links {
+  .mobile-menu-item {
     font-weight: bold;
     font-size: 15px;
     line-height: 18px;
@@ -1280,9 +1318,6 @@ body {
     color: #4f5b70;
     text-decoration: none;
     cursor: pointer;
-  }
-  .nav-links:hover {
-    color: var(--txt-c-accent);
   }
 
   .front-page-profession {
@@ -1486,6 +1521,13 @@ body {
   }
 
   /* Callback form */
+  .callback-form {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .callback-form .container {
+    padding-bottom: 150px;
+  }
   .callback-form-title,
   .callback-form-description {
     width: 100%;
@@ -1550,7 +1592,8 @@ body {
   }
   /* Footer */
   .footer-container {
-    padding-top: 50px;
+    padding-top: 60px;
+    padding-bottom: 70px;
   }
 
   .footer-contacts-container {
@@ -1564,9 +1607,28 @@ body {
   .footer-phone-number {
     margin-top: 0;
   }
+  .footer-e-mail {
+    margin-top: 0;
+  }
   .social-networks-container {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 13px;
+  }
+
+  .request-received-container {
+    /* padding: 60px 130px 80px 130px; */
+    padding: 65px 125px 80px 125px;
+  }
+
+  /* .modal-request-received {
+    width: 350px;
+  } */
+  .modal-request-received-primary-text {
+    max-width: 350px;
+  }
+
+  .project-modal-container {
+    padding: 95px;
   }
 }
