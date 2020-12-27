@@ -142,15 +142,9 @@ body {
   opacity: 0;
   transition: all 0.3s ease-in-out;
   pointer-events: none;
-  display: none;
+
   background: var(--modal-bg-dark);
   z-index: 3;
-}
-
-.modal-active {
-  display: block;
-  opacity: 1;
-  pointer-events: all;
 }
 
 .modal-mobile-menu {
@@ -167,6 +161,8 @@ body {
 .mobile-menu-items {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 207px;
 }
 
 .mobile-menu-item {
@@ -185,7 +181,7 @@ body {
 }
 
 .mobile-menu-containet {
-  height: 70%;
+  height: 75%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -374,7 +370,11 @@ body {
 .mobile-menu i {
   color: var(--c-light);
 }
-
+.modal-active {
+  display: block;
+  opacity: 1;
+  pointer-events: all;
+}
 /* PROJECT MODAL */
 
 .project-modal {
@@ -392,6 +392,7 @@ body {
   position: relative;
   box-sizing: border-box;
   height: 85%;
+  max-width: 965px;
 }
 
 .project-modal-scrollable {
