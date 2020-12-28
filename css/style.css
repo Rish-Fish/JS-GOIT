@@ -79,11 +79,11 @@ body {
 /* COMMON */
 
 .tablet-element {
-  display: none;
+  display: none !important;
 }
 
 .desktop-element {
-  display: none;
+  display: none !important;
 }
 .mobile-element {
   display: block;
@@ -711,6 +711,12 @@ body {
   margin-bottom: 30px;
 }
 
+.swiper-container {
+  width: 320px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
 /* TEAM PROJECT */
 
 .team-projects .container {
@@ -1046,8 +1052,13 @@ body {
   }
 
   .tablet-element {
-    display: block;
+    display: block !important;
   }
+
+  .swiper-container {
+    width: 600px;
+  }
+
   .front-page .container {
     padding-bottom: 70px;
   }
@@ -1294,13 +1305,17 @@ body {
     padding-bottom: 165px;
   }
   .tablet-element {
-    display: none;
+    display: none !important;
   }
   .desktop-element {
-    display: block;
+    display: block !important;
   }
   .hire-me-btn {
     margin-right: 0;
+  }
+
+  .swiper-container {
+    width: 900px;
   }
 
   .navigation-center-menu {
