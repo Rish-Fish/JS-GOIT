@@ -88,6 +88,10 @@ body {
 .mobile-element {
   display: block;
 }
+.footer-mobile-element {
+  display: block !important;
+}
+
 .accent-btn {
   background: var(--c-accent);
   font-weight: bold;
@@ -965,6 +969,7 @@ body {
   color: var(--txt-c-dark);
   text-decoration: none;
   margin-top: 20px;
+  text-align: center;
 }
 .footer-phone-number:hover {
   color: var(--txt-c-accent);
@@ -984,6 +989,11 @@ body {
   transition: var(--animation-transition);
 }
 
+.flex-wrap-soc-network {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .social-networks-container {
   display: flex;
   flex-direction: row;
@@ -1053,6 +1063,10 @@ body {
 
   .tablet-element {
     display: block !important;
+  }
+
+  .footer-mobile-element {
+    display: none !important;
   }
 
   .swiper-container {
